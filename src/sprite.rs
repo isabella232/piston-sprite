@@ -8,6 +8,7 @@ use graphics::math::{ Scalar, Matrix2d, Vec2d };
 use graphics::types::SourceRectangle;
 
 /// A sprite is a texture with some properties.
+#[derive(Clone)]
 pub struct Sprite<I: ImageSize> {
     id: Uuid,
 
